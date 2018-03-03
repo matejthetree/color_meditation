@@ -4,6 +4,8 @@ description: Color Meditation Timer
 dependencies:
   flutter:
     sdk: flutter
+  digital_injection:
+    path: /Users/matejsimunic/Work/dart/colorProject/digital_injection
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
