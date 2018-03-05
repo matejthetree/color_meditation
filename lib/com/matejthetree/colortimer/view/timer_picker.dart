@@ -1,8 +1,6 @@
-import 'package:color_meditation/com/matejthetree/colortimer/model/timer_model.dart';
-import 'package:digital_injection/digital_injection.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
+import 'duration_text.dart';
 class TimerPicker extends StatefulWidget{
   @override
   State<StatefulWidget> createState() => TimerPickerState();
@@ -12,7 +10,6 @@ class TimerPicker extends StatefulWidget{
 
 class TimerPickerState extends State<TimerPicker> {
 
-  TimerModel _timerModel = Injector.instance.getInstance(TimerModel);
 
 
   @override
@@ -37,9 +34,7 @@ class TimerPickerState extends State<TimerPicker> {
               children: <Widget>[
                  Text('Minutes'),
                  SizedBox(width: 20.0,),
-                 Text(
-                  (_timerModel.duration).toString(),
-                  style:  TextStyle(color: CupertinoColors.lightBackgroundGray),
+                 DurationText(
                 ),
               ],
             ),
@@ -48,4 +43,6 @@ class TimerPickerState extends State<TimerPicker> {
       ),
     );
   }
+
 }
+
