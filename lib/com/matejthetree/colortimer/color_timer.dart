@@ -1,14 +1,17 @@
+import 'package:color_meditation/com/matejthetree/colortimer/view/color_page.dart';
 import 'package:color_meditation/com/matejthetree/colortimer/view/my_home_page.dart';
 import 'package:flutter/material.dart';
 
 class ColorMeditation extends StatelessWidget {
-
-
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
       title: 'Meditation Timer',
       debugShowCheckedModeBanner: false,
+      initialRoute: 'home',
+      routes: <String, WidgetBuilder>{
+        '/color': (_) => new ColorPage(),
+      },
       theme: new ThemeData(
         // This is the theme of your application.
         //
@@ -20,9 +23,7 @@ class ColorMeditation extends StatelessWidget {
         // counter didn't reset back to zero; the application is not restarted.
         primarySwatch: Colors.green,
       ),
-      home: new MyHomePage(),
-
+      home: HomePage(),
     );
   }
-
 }

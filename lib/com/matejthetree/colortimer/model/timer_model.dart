@@ -13,7 +13,9 @@ class TimerModel implements IInjectable{
     return index+15;
   });
 
-  StreamController<int> durationUpdated; // to dispatch when durations are updated
+  StreamController<int> durationUpdated;
+
+  get duration => availableDurations[_selectedDurationIndex]; // to dispatch when durations are updated
 
 
   set selectedDurationIndex (int index) {
