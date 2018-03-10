@@ -1,7 +1,7 @@
 import 'package:color_meditation/com/matejthetree/colortimer/model/timer_model.dart';
 import 'package:color_meditation/com/matejthetree/colortimer/view/start_button.dart';
 import 'package:color_meditation/com/matejthetree/colortimer/view/timer_picker.dart';
-import 'package:digital_injection/digital_injection.dart';
+import 'package:organic_injection/organic_injection.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 

@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:color_meditation/com/matejthetree/colortimer/model/timer_model.dart';
-import 'package:digital_injection/digital_injection.dart';
+import 'package:organic_injection/organic_injection.dart';
 import 'package:flutter/material.dart';
 
 class ColorPage extends StatefulWidget {

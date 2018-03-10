@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:color_meditation/com/matejthetree/colortimer/enums/stream_names.dart';
-import 'package:digital_injection/digital_injection.dart';
+import 'package:organic_injection/organic_injection.dart';
 
 
 class TimerModel implements IInjectable{
