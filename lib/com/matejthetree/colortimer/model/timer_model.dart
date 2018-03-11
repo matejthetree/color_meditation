@@ -28,7 +28,7 @@ class TimerModel implements IInjectable{
   int get selectedDurationIndex => _selectedDurationIndex;
 
   @override
-  List<Injectable> injectables = [Injectable(StreamController, name: StreamNames.durationUpdated.toString())];
+  List<In> injectas = [InFd(StreamController, name: StreamNames.durationUpdated.toString())];
 
   @override
   applyInjectable(Type type, Object value) {
